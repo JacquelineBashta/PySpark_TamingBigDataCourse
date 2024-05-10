@@ -8,7 +8,7 @@ sc = SparkContext(conf=conf)
 
 # textFile --> split every line to 1 row in a rdd  (lines is rdd)
 lines = sc.textFile(
-    "D:/_1_Technicals/GitHubs/Repos/PySpark_TamingBigDataCourse/01_ml-100k/u.data")
+    "D:/_1_Technicals/GitHubs/Repos/PySpark_TamingBigDataCourse/13_ml-100k/u.data")
 
 # Rating is a new rdd
 ratings = lines.map(lambda x: x.split()[2])
